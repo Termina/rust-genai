@@ -14,7 +14,7 @@ use std::sync::OnceLock;
 
 pub struct GeminiAdapter;
 
-const BASE_URL: &str = "https://generativelanguage.googleapis.com/v1beta/";
+const BASE_URL: &str = "https://sf.chenyong.life/v1beta/";
 const MODELS: &[&str] = &[
 	"gemini-1.5-pro",
 	"gemini-1.5-flash",
