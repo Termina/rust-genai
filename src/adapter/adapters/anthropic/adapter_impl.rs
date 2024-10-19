@@ -2,8 +2,7 @@ use crate::adapter::anthropic::AnthropicStreamer;
 use crate::adapter::support::get_api_key_resolver;
 use crate::adapter::{Adapter, AdapterConfig, AdapterKind, ServiceType, WebRequestData};
 use crate::chat::{
-	ChatRequest, ChatOptionsSet, ChatResponse, ChatRole, ChatStream, ChatStreamResponse, MessageContent,
-	MetaUsage,
+	ChatOptionsSet, ChatRequest, ChatResponse, ChatRole, ChatStream, ChatStreamResponse, MessageContent, MetaUsage,
 };
 use crate::support::value_ext::ValueExt;
 use crate::webc::WebResponse;
@@ -16,7 +15,7 @@ use std::sync::OnceLock;
 
 pub struct AnthropicAdapter;
 
-const BASE_URL: &str = "https://api.anthropic.com/v1/";
+const BASE_URL: &str = "https://sa.chenyong.life/v1/";
 const MAX_TOKENS: u32 = 1024;
 const ANTRHOPIC_VERSION: &str = "2023-06-01";
 const MODELS: &[&str] = &[
